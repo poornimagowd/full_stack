@@ -1,0 +1,363 @@
+
+	<!doctype html>
+	<html lang="en">
+	  <head>
+	<style>
+	  
+	    img.card-img-top{
+			  width:328px;
+			  height:328px;
+			}
+		.img-about{
+			width:80%;
+			
+		}
+			
+	
+	  </style>
+	  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<title>Full stack conference</title>
+	  </head>
+	<body>
+<!--nav bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+  <a class="navbar-brand order-1 mr-0" href="https://www.w3schools.com/html/" target="_blank">w3schools</a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about" >About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#speakers">Speakers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#schedule">Schedules</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<!--/nav bar-->
+<!-- jumbotron-->
+<div class="jumbotron jumbotron-fluid bg-info">
+  <div class="container text-center text-white">
+    <h1 class="display-3 pt-5">FULL STACK CONFERENCE</h1>
+    <p class="lead my-4">A One-day Conference About All Things JavaScript.</p>
+<div class="btn-group" role="group" aria-label="Basic example">
+  <a type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Register Now</a>
+  <a type="button" class="btn btn-secondary btn-lg" href="#speakers">See speakers</a>
+  
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- /jumbotron-->
+	  <div class="container"><!--container -->
+	  <div class="row" id="about"><!--about-->
+	
+	  <div class="col order-lg-2">
+	  <h5 class=" mb-4 col-lg">About full stack conf</h5>
+	  <img src="C:\Users\poornima\Desktop\project\vr-space.jpg" class="mb-2 rounded mx-auto d-block img-about" alt="vr-space">
+
+
+	  <p> The beautiful city of portland, oregon will be the host city for full stack conf</p>
+	  <p>Explor the feature of javascript with a linup of industry professionals.Discover new techniques to advance your carrer aa a web dveloper</p>
+	  </div>
+	  <div class="col order-lg-1">
+	  <h5 class="mb-4 col-lg">Expert speakers</h5>
+	  <p>Our expert speaker lineup was just announced, so don't wait too long before grabbing your tickets!</p>
+	  <p>Want to meet the international JavaScript community and share skills with some of the world's top experts, hackers, and makers? Be the first to know what to expect for the future of JavaScript.</p>
+	  <p>Full Stack Conf is committed to being inclusive and welcoming for everyone. We look forward to another intensive day of learning and sharing.</p>
+	  </div>
+	  <div class="col order-lg-3">
+	  <h5 class="mb-4 col-lg">What You'll Learn</h5>
+	  <ul>
+	  <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action"><strong>ES2015: </strong>Latest version of javascript </a>
+  <a href="#" class="list-group-item list-group-item-action"><strong>Mango DB: </strong>No SQL database</a>
+  <a href="#" class="list-group-item list-group-item-action"><strong>Express: </strong>Frame work for node</a>
+  <a href="#" class="list-group-item list-group-item-action"><strong>React: </strong>JavaScript Library</a>
+  <a href="#" class="list-group-item list-group-item-action"><strong>Node.js: </strong>JavaScript Environment</a>
+  <a href="#" class="list-group-item list-group-item-action"><strong>Babel: </strong>JavaScript compiler</a>
+</div>
+	  </ul>
+	  </div>
+	  </div><!--/about-->
+	  </div>
+	  <!--speakers-->
+	  <div class="container">
+	  <h5 class="display-4 text-center text-muted my-4" id="speakers">Speakers</h5> 
+	  <div class="card-deck ">
+		<div class="row">
+		  <div class ="col-md-4 mb-4 ">
+		  <div class="card">
+			<img class="card-img-top" src="https://media.istockphoto.com/vectors/nostradamus-writing-the-future-vector-id136591499?k=6&m=136591499&s=612x612&w=0&h=4ugMsPA5SOhHioEl6OmDfZHgDUdXeXW4d0jb38_VMus=" alt="Card image cap">
+			<div class="card-body">
+			  <h5 class="card-title">NodeStradamus</h5>
+			  <p class="card-text">"NodeStra" is a software engineer and philosopher trying to . He codes for non-profits, eCommerce, and large-scale web apps..</p>
+			  </div>
+			</div>
+		  </div>
+	  <div class="col-md-4 mb-4">
+	  <div class="card">
+		<img class="card-img-top" src="https://tse3.mm.bing.net/th?id=OIP.m83DC8AQAraBBe49qlbPgAHaHa&pid=Api&P=0&w=300&h=300" alt="Card image cap">
+		<div class="card-body">
+		  <h5 class="card-title">Geo "Lo" Cation</h5>
+		  <p class="card-text">Geo is a JavaScript developer working on large-scale applications. He's also a teacher who strives to support students in removing all barriers to learning code.</p>
+		 </div>
+		</div>
+	  </div>
+	 
+	 
+	  <div class="col-md-4 mb-4">
+	  <div class="card">
+		<img class="card-img-top" src="https://tse3.mm.bing.net/th?id=OIP.6G9L4j3-z_eiFHm3SeJfswHaEK&pid=Api&P=0&w=303&h=171" alt="Card image cap">
+		<div class="card-body">
+		  <h5 class="card-title">Ecma Scriptnstuff</h5>
+		  <p class="card-text">Ecma found her passion for computers and programming over 15 years ago. She is excited to introduce people to the wonderful world of JavaScript..</p>
+		 </div>
+		</div>
+	  </div>
+	 	 
+	  <div class="col-md-4">
+	  <div class="card">
+		<img class="card-img-top" src="https://tse4.mm.bing.net/th?id=OIP.4vJsSWQK0C9CCDyds8NPIwAAAA&pid=Api&P=0&w=300&h=300" alt="Card image cap">
+		<div class="card-body">
+		  <h5 class="card-title">Json Babel</h5>
+		  <p class="card-text">All of his professional life, Json has worked with computers online; he is a polyglot programmer and likes using the right tools for the job..</p>
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	  <div class="card">
+		<img class="card-img-top" src="https://tse2.explicit.bing.net/th?id=OIP.p8m2gDI7fjvGPNC2EmmGRwAAAA&pid=Api&P=0&w=300&h=300" alt="Card image cap">
+		<div class="card-body">
+		  <h5 class="card-title">Jay Query</h5>
+		  <p class="card-text">Jay is a developer, author of CSS: The Missing Manual, JavaScript & jQuery: The Missing Manual, and web development teacher.
+	.</p>
+		</div>
+	  </div>
+	  </div>
+	 
+	  <div class="col-md-4">
+	  <div class="card">
+		<img class="card-img-top" src="https://tse2.mm.bing.net/th?id=OIP.7kMM94vLdG-i-5p8jgnoKQHaHx&pid=Api&P=0&w=300&h=300" alt="Card image cap">
+		<div class="card-body">
+		  <h5 class="card-title">Mark Henry</h5>
+		  <p class="card-text">Mark Henry is the best teacher at teamtreehouse, it's worth studying if he's teaching..</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	</div>
+	</div>
+	  <!--/speakers-->
+	  <!--schedule-->
+	 <div class="container">
+	  <h5 class="display-4 text-center text-muted my-4" id="schedule">Schedules</h5>
+	  <ul class="list-group">
+  <li class="list-group-item ">
+  <div class="d-flex justify-content-between"><strong>Keynote: Internet of Things</strong>
+    <span class="badge badge-info badge-pill p-2">9:00AM</span>
+</div>
+<p class="mb-1">Nostrodomus</p>
+  </li>
+
+  <li class="list-group-item">
+  <div class="d-flex justify-content-between"><strong>
+    React Basics</strong>
+    <span class="badge badge-info badge-pill p-2">10:00AM</span>
+	</div>
+	<p class="mb-1">Vivianne McVue</p>
+  </li>
+
+  <li class="list-group-item">
+  <div class="d-flex justify-content-between"><strong>
+    Hey, Mongo!</strong>
+    <span class="badge badge-info badge-pill p-2">11:00AM</span>
+	</div>
+	<p class="mb-1">Mango DB</p>
+
+  </li>
+
+  <li class="list-group-item">
+  <div class="d-flex justify-content-between"><strong>
+    Hey, jay query</strong>
+    <span class="badge badge-info badge-pill p-2">12:00AM</span>
+	</div>
+	<p class="mb-1">Jay Query</p>
+
+  </li>
+
+  <li class="list-group-item">
+  <div class="d-flex justify-content-between"><strong>
+    Lunch!</strong>
+    <span class="badge badge-info badge-pill p-2">1:00AM</span>
+	</div>
+	<p class="mb-1">Free pizza for everyone!</p>
+
+  </li>
+
+  <li class="list-group-item">
+  <div class="d-flex justify-content-between"><strong>
+    Introducing, to ES2015!</strong>
+    <span class="badge badge-info badge-pill p-2">2:00AM</span>
+	</div>
+	<p class="mb-1">Ecma Scriptnstuff</p>
+
+  </li>
+
+  <li class="list-group-item">
+  <div class="d-flex justify-content-between"><strong>
+    Getting started with bell!</strong>
+    <span class="badge badge-info badge-pill p-2">3:00AM</span>
+	</div>
+	<p class="mb-1">Robbie Redux</p>
+
+  </li>
+
+</ul>
+	  	<div style="text-align:center;">  <button type="button" class="btn btn-outline-info  mt-4">Don't miss out,Register here</button></div>
+         <hr>
+	  </div>
+       <!--/schedules-->
+        <!-- about treehouse-->
+	  <div class="container mb-4">
+      <div class="row text muted">
+      <div class="col-lg-6">
+    
+	  <h5><strong>About treehouse</strong></h5>
+<p>Treehouse brings affordable technology education to people everywhere to help them achieve their dreams and change the world.</p>
+        </div>
+<div class="col-lg-6">
+ <p><strong>Stay up-to-date on Full Stack Conf</strong></p>
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Enter your email">
+  <div class="input-group-append ">
+    <button class="btn btn-info" type="button">Sign up</button>
+  </div>
+</div>
+</div>
+</div>
+<hr>
+<!--footer-->
+<div class="row py-3">
+<div class="col-md-7">
+<nav class="nav">
+  <a class="nav-link active" href="#">Community</a>
+  <a class="nav-link" href="#">Tracks</a>
+<div class="dropup">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Other confs
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button">Action</button>
+    <button class="dropdown-item" type="button">JAVA</button>
+    <button class="dropdown-item" type="button">PYTHON</button>
+    <button class="dropdown-item" type="button">HTML</button>
+    <button class="dropdown-item" type="button">CSS</button> 
+     <div class="dropdown-divider"></div>
+   <a class="dropdown-item" href="#">Separated link</a>
+</div>
+  </div>
+</div>
+<div class="col-md-5">
+<p class="text-right">&copy; 2016 full stack &amp; conf</p>
+</nav>
+</div>
+</div>
+<!--/footer-->
+<!--/about treehouse-->
+	</div><!--/container-->
+	 	
+		
+		<!-- Optional JavaScript -->
+		  </body>
+	</html>
